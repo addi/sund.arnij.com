@@ -1,0 +1,572 @@
+[
+	{
+		"name": "Álftaneslaug",
+		"id": "alftaneslaug",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "20:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "20:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "20:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "20:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "20:00"
+			},
+			"sat": {
+				"opens": "10:00",
+				"closes": "18:00"
+			},
+			"sun": {
+				"opens": "10:00",
+				"closes": "18:00"
+			}
+		}
+	},
+	{
+		"name": "Árbæjarlaug",
+		"id": "arbaejarlaug",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "20:00"
+			},
+			"sat": {
+				"opens": "9:00",
+				"closes": "19:00"
+			},
+			"sun": {
+				"opens": "9:00",
+				"closes": "19:00"
+			}
+		}
+	},
+	{
+		"name": "Ásgarðslaug Garðabæ",
+		"id": "asgardslaug-gardabae",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"sat": {
+				"opens": "8:00",
+				"closes": "18:00"
+			},
+			"sun": {
+				"opens": "8:00",
+				"closes": "18:00"
+			}
+		}
+	},
+	{
+		"name": "Ásvallalaug",
+		"id": "asvallalaug",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"sat": {
+				"opens": "8:00",
+				"closes": "18:00"
+			},
+			"sun": {
+				"opens": "8:00",
+				"closes": "17:00"
+			}
+		}
+	},
+	{
+		"name": "Breiðholtslaug",
+		"id": "breidholtslaug",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "20:00"
+			},
+			"sat": {
+				"opens": "9:00",
+				"closes": "19:00"
+			},
+			"sun": {
+				"opens": "9:00",
+				"closes": "19:00"
+			}
+		}
+	},
+	{
+		"name": "Grafarvogslaug",
+		"id": "grafarvogslaug",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "20:00"
+			},
+			"sat": {
+				"opens": "9:00",
+				"closes": "19:00"
+			},
+			"sun": {
+				"opens": "9:00",
+				"closes": "19:00"
+			}
+		}
+	},
+	{
+		"name": "Klébergslaug",
+		"id": "klebergslaug",
+		"hours": {
+			"mon": {
+				"opens": "9:00",
+				"closes": "20:00"
+			},
+			"tue": {
+				"opens": "9:00",
+				"closes": "20:00"
+			},
+			"wed": {
+				"opens": "9:00",
+				"closes": "20:00"
+			},
+			"thu": {
+				"opens": "9:00",
+				"closes": "20:00"
+			},
+			"fri": {
+				"opens": "9:00",
+				"closes": "20:00"
+			},
+			"sat": {
+				"opens": "11:00",
+				"closes": "15:00"
+			},
+			"sun": {
+				"opens": "11:00",
+				"closes": "15:00"
+			}
+		}
+	},
+	{
+		"name": "Lágafellslaug",
+		"id": "lagafellslaug",
+		"hours": {
+			"mon": {
+				"opens": "6:30",
+				"closes": "21:30"
+			},
+			"tue": {
+				"opens": "6:30",
+				"closes": "21:30"
+			},
+			"wed": {
+				"opens": "6:30",
+				"closes": "21:30"
+			},
+			"thu": {
+				"opens": "6:30",
+				"closes": "21:30"
+			},
+			"fri": {
+				"opens": "6:30",
+				"closes": "21:30"
+			},
+			"sat": {
+				"opens": "8:00",
+				"closes": "19:00"
+			},
+			"sun": {
+				"opens": "8:00",
+				"closes": "19:00"
+			}
+		}
+	},
+	{
+		"name": "Laugardalslaug",
+		"id": "laugardalslaug",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"sat": {
+				"opens": "8:00",
+				"closes": "22:00"
+			},
+			"sun": {
+				"opens": "8:00",
+				"closes": "22:00"
+			}
+		}
+	},
+	{
+		"name": "Salalaug",
+		"id": "salalaug",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"sat": {
+				"opens": "8:00",
+				"closes": "20:00"
+			},
+			"sun": {
+				"opens": "8:00",
+				"closes": "20:00"
+			}
+		}
+	},
+	{
+		"name": "Seltjarnarneslaug",
+		"id": "seltjarnarneslaug",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"sat": {
+				"opens": "8:00",
+				"closes": "19:30"
+			},
+			"sun": {
+				"opens": "8:00",
+				"closes": "19:30"
+			}
+		}
+	},
+	{
+		"name": "Sundhöll Hafnarfjarðar",
+		"id": "sundholl-hafnarfjardar",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "19:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "19:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "19:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "19:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "19:00"
+			}
+		}
+	},
+	{
+		"name": "Sundhöll Reykjavíkur",
+		"id": "sundholl-reykjavikur",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "20:00"
+			},
+			"sat": {
+				"opens": "8:00",
+				"closes": "16:00"
+			},
+			"sun": {
+				"opens": "10:00",
+				"closes": "18:00"
+			}
+		}
+	},
+	{
+		"name": "Sundlaug Kópavogs",
+		"id": "sundlaug-kopavogs",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"sat": {
+				"opens": "8:00",
+				"closes": "20:00"
+			},
+			"sun": {
+				"opens": "8:00",
+				"closes": "20:00"
+			}
+		}
+	},
+	{
+		"name": "Suðurbæjarlaug",
+		"id": "sudurbaejarlaug",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"sat": {
+				"opens": "8:00",
+				"closes": "18:00"
+			},
+			"sun": {
+				"opens": "8:00",
+				"closes": "17:00"
+			}
+		}
+	},
+	{
+		"name": "Varmárlaug",
+		"id": "varmarlaug",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "21:00"
+			},
+			"sat": {
+				"opens": "9:00",
+				"closes": "17:00"
+			},
+			"sun": {
+				"opens": "9:00",
+				"closes": "16:00"
+			}
+		}
+	},
+	{
+		"name": "Vesturbæjarlaug",
+		"id": "vesturbaejarlaug",
+		"hours": {
+			"mon": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"tue": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"wed": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"thu": {
+				"opens": "06:30",
+				"closes": "22:00"
+			},
+			"fri": {
+				"opens": "06:30",
+				"closes": "20:00"
+			},
+			"sat": {
+				"opens": "9:00",
+				"closes": "19:00"
+			},
+			"sun": {
+				"opens": "9:00",
+				"closes": "19:00"
+			}
+		}
+	}
+]

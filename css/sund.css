@@ -1,0 +1,72 @@
+body {
+	font: 12px/18px Helvetica, Arial, sans-serif;
+	background: #fff;
+	/*color: #3788DB;*/
+}
+
+ol, ul { list-style: none; }
+
+#container { 
+	width: 800px; 
+	margin: 0 auto; 
+}
+
+#container h1
+{
+	color: #6DBCDB;
+}
+
+ul.ourHolder {
+	margin: 0;
+	padding: 0;
+	width: 800px;
+	overflow: hidden;
+
+	border-top: 1px solid #6DBCDB;
+}
+
+ul.ourHolder li.item {
+	width: 800px;
+	height: 90px;
+/*	float: left;*/
+	overflow: hidden;
+}
+
+ul.ourHolder li.background {
+	background: #6DBCDB;
+}
+
+ul.ourHolder li.item  h2 {
+	float: left;
+	padding-left: 5px;
+}
+
+ul.ourHolder li.item span {
+	float: right;
+	padding-right: 5px;
+	padding-top: 10px;
+}
+
+ul.ourHolder li.item div
+{
+	float: right;
+	padding-right: 5px;
+	padding-top: 10px;
+
+	text-align: right;
+}
+
+ul.ourHolder li.item p {
+	padding: 0;
+	margin: 0;
+}
+
+ul.ourHolder li.item .current {
+	font-weight: bold;
+}
+
+ul.ourHolder li.item .closed {
+	text-decoration: line-through;
+}
+
+/*ul.ourHolder li.item h3 { margin-top: 10px; font-size: 16px; line-height: 20px; }*/
