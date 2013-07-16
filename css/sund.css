@@ -37,8 +37,8 @@ ul.ourHolder li.background {
 }
 
 ul.ourHolder li.item  h2 {
-	float: left;
-	padding-left: 5px;
+/*	float: left;
+	padding-left: 5px;*/
 }
 
 /*ul.ourHolder li.item span {
@@ -50,19 +50,24 @@ ul.ourHolder li.item  h2 {
 ul.ourHolder li.item div
 {
 	margin: 0;
-
 	padding: 0;
+}
 
+ul.ourHolder li.item .info
+{
+	float: left;
+	padding-left: 5px;
+}
+
+ul.ourHolder li.item .timeinfo
+{
 	float: right;
 	padding-right: 5px;
-	/*padding-top: 10px;*/
 
 	text-align: right;
 }
 
 ul.ourHolder li.item div h2 {
-	float: right;
-
 	margin-bottom: 0;
 }
 
@@ -71,9 +76,9 @@ ul.ourHolder li.item p {
 	margin: 0;
 }
 
-ul.ourHolder li.item .current {
+/*ul.ourHolder li.item .current {
 	font-weight: bold;
-}
+}*/
 
 ul.ourHolder li.item .closed .hours {
 	text-decoration: line-through;
@@ -82,7 +87,7 @@ ul.ourHolder li.item .closed .hours {
 h2 span.days {
 	font-weight: normal;
 
-	/*font-size: 12px;*/
+/*	font-size: 16px;*/
 }
 
 

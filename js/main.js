@@ -269,9 +269,9 @@ function makePoolHtml(info, isOdd, dayTag)
 	// var hourClass = (isOpen(info)) ? "" : "closeing";
 
 	var poolHtml = '<li class="'+classes+'" data-id="id-'+info.id+'" data-type="league2">'
-	poolHtml += '<h2>'+info.name+'</h2>'
+	poolHtml += '<div class="info"><h2>'+info.name+'</h2></div>'
 
-	poolHtml += '<div>';
+	poolHtml += '<div class="timeinfo">';
 
 	poolHtml += makeTimeHtml(info);
 
