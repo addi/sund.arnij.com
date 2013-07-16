@@ -2,6 +2,10 @@
 	{
 		"name": "Álftaneslaug",
 		"id": "alftaneslaug",
+		"location":{
+			"lon": 64.104246, 
+			"lat":-22.01909
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -32,10 +36,15 @@
 				"closes": "18:00"
 			}
 		}
+
 	},
 	{
 		"name": "Árbæjarlaug",
 		"id": "arbaejarlaug",
+		"location":{
+			"lon": 64.112092, 
+			"lat":-21.794709
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -70,6 +79,10 @@
 	{
 		"name": "Ásgarðslaug Garðabæ",
 		"id": "asgardslaug-gardabae",
+		"location":{
+			"lon": 64.088163, 
+			"lat": -21.929389
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -104,6 +117,10 @@
 	{
 		"name": "Ásvallalaug",
 		"id": "asvallalaug",
+		"location":{
+			"lon": 64.052047, 
+			"lat": -21.975613
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -138,6 +155,10 @@
 	{
 		"name": "Breiðholtslaug",
 		"id": "breidholtslaug",
+		"location":{
+			"lon": 64.104568, 
+			"lat": -21.818886
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -172,6 +193,10 @@
 	{
 		"name": "Grafarvogslaug",
 		"id": "grafarvogslaug",
+		"location":{
+			"lon": 64.137877, 
+			"lat": -21.786490
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -206,6 +231,10 @@
 	{
 		"name": "Klébergslaug",
 		"id": "klebergslaug",
+		"location":{
+			"lon": 64.237505, 
+			"lat": -21.827780
+		},
 		"hours": {
 			"mon": {
 				"opens": "9:00",
@@ -240,6 +269,10 @@
 	{
 		"name": "Lágafellslaug",
 		"id": "lagafellslaug",
+		"location":{
+			"lon": 64.164813, 
+			"lat": -21.726216
+		},
 		"hours": {
 			"mon": {
 				"opens": "6:30",
@@ -274,6 +307,10 @@
 	{
 		"name": "Laugardalslaug",
 		"id": "laugardalslaug",
+		"location":{
+			"lon": 64.145859, 
+			"lat": -21.879397
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -308,6 +345,10 @@
 	{
 		"name": "Salalaug",
 		"id": "salalaug",
+		"location":{
+			"lon": 64.091890, 
+			"lat": -21.855901
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -342,6 +383,10 @@
 	{
 		"name": "Seltjarnarneslaug",
 		"id": "seltjarnarneslaug",
+		"location":{
+			"lon": 64.150408, 
+			"lat": -21.991767
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -376,6 +421,10 @@
 	{
 		"name": "Sundhöll Hafnarfjarðar",
 		"id": "sundholl-hafnarfjardar",
+		"location":{
+			"lon": 64.072496, 
+			"lat": -21.968252
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -402,6 +451,10 @@
 	{
 		"name": "Sundhöll Reykjavíkur",
 		"id": "sundholl-reykjavikur",
+		"location":{
+			"lon": 64.141771, 
+			"lat": -21.920378
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -436,6 +489,10 @@
 	{
 		"name": "Sundlaug Kópavogs",
 		"id": "sundlaug-kopavogs",
+		"location":{
+			"lon": 64.110382, 
+			"lat": -21.917179
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -470,6 +527,10 @@
 	{
 		"name": "Suðurbæjarlaug",
 		"id": "sudurbaejarlaug",
+		"location":{
+			"lon": 64.059906, 
+			"lat": -21.962030
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -504,6 +565,10 @@
 	{
 		"name": "Varmárlaug",
 		"id": "varmarlaug",
+		"location":{
+			"lon": 64.170285, 
+			"lat": -21.689964
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
@@ -538,6 +603,10 @@
 	{
 		"name": "Vesturbæjarlaug",
 		"id": "vesturbaejarlaug",
+		"location":{
+			"lon": 64.144385, 
+			"lat": -21.963073
+		},
 		"hours": {
 			"mon": {
 				"opens": "06:30",
