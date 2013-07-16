@@ -216,7 +216,8 @@ function makeTimeHtml(info)
 {
 	var daysWithSameOpeningTime = reorderTimeInfo(info);
 
-	var openText = "";
+	var currentDayText = "";
+	var otherDaysText = "";
 
 	for (var d = 0; d < daysWithSameOpeningTime.length; d++)
 	{
@@ -234,6 +235,8 @@ function makeTimeHtml(info)
 
 		var timeClass = "";
 
+		var dayName = (daysCount == 1) ? firstDayName : firstDayName+' -  '+lastDayName;
+
 		if (daysWithSameOpeningTime[d].days.contains(getDayTag()))
 		{
 			timeClass += "current";
@@ -241,21 +244,22 @@ function makeTimeHtml(info)
 			if (!isOpenWithHours(daysWithSameOpeningTime[d].hours))
 			{
 				timeClass += " closed";
-
 			}
-		}
 
-		if (daysCount == 1)
-		{
-			openText += '<p class="'+timeClass+'">'+firstDayName+": "+openTime+"</p>";
+			currentDayText = '<h2 class="'+timeClass+'"><span class="days">'+dayName+':</span> <span class="hours">'+openTime+'</span></h2>';
 		}
 		else
 		{
-			openText += '<p class="'+timeClass+'">'+firstDayName+" - "+lastDayName+": "+openTime+"</p>";
+			if (otherDaysText != "")
+			{
+				otherDaysText += ", ";
+			}
+
+			otherDaysText += dayName+": "+openTime;
 		}
 	}
 
-	return openText;
+	return currentDayText+"<p>"+otherDaysText+"</p>";
 }
 
 function makePoolHtml(info, isOdd, dayTag)
