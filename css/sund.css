@@ -14,6 +14,20 @@ ol, ul { list-style: none; }
 #container h1
 {
 	color: #6DBCDB;
+	float: left;
+}
+
+#container #navigation
+{
+	padding-top: 20px;
+
+	/*border: 1px solid red;*/
+	float: right;	
+}
+
+#container #navigation a, a:visited
+{
+	color: black;
 }
 
 ul.ourHolder {

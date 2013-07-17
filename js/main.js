@@ -10,10 +10,16 @@ Array.prototype.contains = function(obj) {
     return false;
 }
 
+if (typeof(Number.prototype.toRad) === "undefined") {
+  Number.prototype.toRad = function() {
+    return this * Math.PI / 180;
+  }
+}
+
+var $data;
+
 $(document).ready(function()
 {
-	var $data;
-
 	$.getJSON("sundlaugar.json", function(json)
 	{
 			$data = json;
@@ -22,6 +28,15 @@ $(document).ready(function()
 		
 			displayData(orderedByOpen);
 	});
+
+	$('#navigation a').click(function(e)
+	{
+		if (navigator.geolocation)
+    	{
+    		navigator.geolocation.getCurrentPosition(geoLocation);
+    	}
+	});
+
 
   // get the action filter option item on page load
 	  var $filterType = $('#filterOptions li.active a').attr('class');
@@ -44,7 +59,6 @@ $(document).ready(function()
 		var $filterType = $(this).attr('class');
 		$(this).parent().addClass('active');
 
-		console.log("lol");
 
 		if ($filterType == 'all') {
 			// assign all li items to the $filteredData var when
@@ -69,6 +83,45 @@ $(document).ready(function()
 		return false;
 	});
 });
+
+function geoLocation(position)
+{
+	console.log(position);
+
+	var distancePools = new Array();
+
+	for (var s = 0; s < $data.length; s++)
+	{
+		var tmpPool = $data[s];
+
+		tmpPool.distance = distanceBetweenLocations(position.coords, tmpPool.location)
+
+		distancePools.push(tmpPool);
+	}
+
+	var orderedBydistancePools = distancePools.sort(function(a,b){return a.distance-b.distance});
+
+	displayData(orderedBydistancePools);
+}
+
+function distanceBetweenLocations(location1, location2)
+{
+
+	var R = 6371; // km
+	
+	var dLat = (location2.latitude-location1.latitude).toRad();
+	var dLon = (location2.longitude-location1.longitude).toRad();
+	
+	var lat1 = location1.latitude.toRad();
+	var lat2 = location2.latitude.toRad();
+
+	var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+	        Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
+	
+	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+	return R * c;
+}
 
 function getDayTag()
 {
