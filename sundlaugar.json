@@ -9,31 +9,31 @@
 		"hours": {
 			"mon": {
 				"opens": "06:30",
-				"closes": "20:00"
+				"closes": "21:00"
 			},
 			"tue": {
 				"opens": "06:30",
-				"closes": "20:00"
+				"closes": "21:00"
 			},
 			"wed": {
 				"opens": "06:30",
-				"closes": "20:00"
+				"closes": "21:00"
 			},
 			"thu": {
 				"opens": "06:30",
-				"closes": "20:00"
+				"closes": "21:00"
 			},
 			"fri": {
 				"opens": "06:30",
-				"closes": "20:00"
+				"closes": "21:00"
 			},
 			"sat": {
-				"opens": "10:00",
-				"closes": "18:00"
+				"opens": "09:00",
+				"closes": "19:00"
 			},
 			"sun": {
-				"opens": "10:00",
-				"closes": "18:00"
+				"opens": "09:00",
+				"closes": "19:00"
 			}
 		}
 	},
@@ -67,11 +67,11 @@
 			},
 			"sat": {
 				"opens": "9:00",
-				"closes": "19:00"
+				"closes": "18:00"
 			},
 			"sun": {
 				"opens": "9:00",
-				"closes": "19:00"
+				"closes": "18:00"
 			}
 		}
 	},
@@ -181,11 +181,11 @@
 			},
 			"sat": {
 				"opens": "9:00",
-				"closes": "19:00"
+				"closes": "18:00"
 			},
 			"sun": {
 				"opens": "9:00",
-				"closes": "19:00"
+				"closes": "18:00"
 			}
 		}
 	},
@@ -219,11 +219,11 @@
 			},
 			"sat": {
 				"opens": "9:00",
-				"closes": "19:00"
+				"closes": "18:00"
 			},
 			"sun": {
 				"opens": "9:00",
-				"closes": "19:00"
+				"closes": "18:00"
 			}
 		}
 	},
@@ -236,24 +236,24 @@
 		},
 		"hours": {
 			"mon": {
-				"opens": "9:00",
-				"closes": "20:00"
+				"opens": "15:00",
+				"closes": "21:00"
 			},
 			"tue": {
-				"opens": "9:00",
-				"closes": "20:00"
+				"opens": "15:00",
+				"closes": "21:00"
 			},
 			"wed": {
-				"opens": "9:00",
-				"closes": "20:00"
+				"opens": "15:00",
+				"closes": "21:00"
 			},
 			"thu": {
-				"opens": "9:00",
-				"closes": "20:00"
+				"opens": "15:00",
+				"closes": "21:00"
 			},
 			"fri": {
-				"opens": "9:00",
-				"closes": "20:00"
+				"opens": "15:00",
+				"closes": "21:00"
 			},
 			"sat": {
 				"opens": "11:00",
@@ -371,11 +371,11 @@
 			},
 			"sat": {
 				"opens": "8:00",
-				"closes": "20:00"
+				"closes": "18:00"
 			},
 			"sun": {
 				"opens": "8:00",
-				"closes": "20:00"
+				"closes": "18:00"
 			}
 		}
 	},
@@ -409,11 +409,11 @@
 			},
 			"sat": {
 				"opens": "8:00",
-				"closes": "19:30"
+				"closes": "18:00"
 			},
 			"sun": {
 				"opens": "8:00",
-				"closes": "19:30"
+				"closes": "18:00"
 			}
 		}
 	},
@@ -427,23 +427,23 @@
 		"hours": {
 			"mon": {
 				"opens": "06:30",
-				"closes": "19:00"
+				"closes": "21:00"
 			},
 			"tue": {
 				"opens": "06:30",
-				"closes": "19:00"
+				"closes": "21:00"
 			},
 			"wed": {
 				"opens": "06:30",
-				"closes": "19:00"
+				"closes": "21:00"
 			},
 			"thu": {
 				"opens": "06:30",
-				"closes": "19:00"
+				"closes": "21:00"
 			},
 			"fri": {
 				"opens": "06:30",
-				"closes": "19:00"
+				"closes": "21:00"
 			}
 		}
 	},
@@ -515,11 +515,11 @@
 			},
 			"sat": {
 				"opens": "8:00",
-				"closes": "20:00"
+				"closes": "18:00"
 			},
 			"sun": {
 				"opens": "8:00",
-				"closes": "20:00"
+				"closes": "18:00"
 			}
 		}
 	},
@@ -570,23 +570,23 @@
 		},
 		"hours": {
 			"mon": {
-				"opens": "06:30",
+				"opens": "15:00",
 				"closes": "21:00"
 			},
 			"tue": {
-				"opens": "06:30",
+				"opens": "15:00",
 				"closes": "21:00"
 			},
 			"wed": {
-				"opens": "06:30",
+				"opens": "15:00",
 				"closes": "21:00"
 			},
 			"thu": {
-				"opens": "06:30",
+				"opens": "15:00",
 				"closes": "21:00"
 			},
 			"fri": {
-				"opens": "06:30",
+				"opens": "15:00",
 				"closes": "21:00"
 			},
 			"sat": {
@@ -629,11 +629,11 @@
 			},
 			"sat": {
 				"opens": "9:00",
-				"closes": "19:00"
+				"closes": "18:00"
 			},
 			"sun": {
 				"opens": "9:00",
-				"closes": "19:00"
+				"closes": "18:00"
 			}
 		}
 	}
