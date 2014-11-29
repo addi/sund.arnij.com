@@ -96,6 +96,7 @@ ul.ourHolder li.item p {
 
 ul.ourHolder li.item .closed .hours {
 	text-decoration: line-through;
+	color: #CC0000;
 }
 
 h2 span.days {
