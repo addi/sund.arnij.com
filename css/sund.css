@@ -1,28 +1,26 @@
-body {
-	font: 12px/18px Helvetica, Arial, sans-serif;
+.container {
+	font: 12px/18px 'Avenir Next', 'Avenir', Helvetica, Arial, sans-serif;
 	background: #fff;
 	/*color: #3788DB;*/
 }
 
 ol, ul { list-style: none; }
 
-#container { 
-	width: 800px; 
-	margin: 0 auto; 
+.container {
+	width: 800px;
+	margin: 0 auto;
 }
 
-#container h1
-{
+.header {
 	color: #6DBCDB;
 	float: left;
 }
 
-#container #navigation
-{
+.sort-by-location {
 	padding-top: 20px;
 
 	/*border: 1px solid red;*/
-	float: right;	
+	float: right;
 }
 
 #container #navigation a, a:visited
@@ -30,7 +28,7 @@ ol, ul { list-style: none; }
 	color: black;
 }
 
-ul.ourHolder {
+.pools {
 	margin: 0;
 	padding: 0;
 	width: 800px;
@@ -39,71 +37,42 @@ ul.ourHolder {
 	border-top: 1px solid #6DBCDB;
 }
 
-ul.ourHolder li.item {
+.pool {
 	width: 800px;
 	height: 65px;
 /*	float: left;*/
 	overflow: hidden;
 }
 
-ul.ourHolder li.background {
+.pool:nth-child(odd) {
 	background: #6DBCDB;
 }
 
-ul.ourHolder li.item  h2 {
-/*	float: left;
-	padding-left: 5px;*/
-}
-
-/*ul.ourHolder li.item span {
-	float: right;
-	padding-right: 5px;
-	padding-top: 10px;
-}*/
-
-ul.ourHolder li.item div
-{
-	margin: 0;
-	padding: 0;
-}
-
-ul.ourHolder li.item .info
-{
+.pool__name {
 	float: left;
 	padding-left: 5px;
 }
 
-ul.ourHolder li.item .timeinfo
-{
+.pool__hours {
 	float: right;
 	padding-right: 5px;
 
 	text-align: right;
 }
 
-ul.ourHolder li.item div h2 {
+.pool__hours__current {
 	margin-bottom: 0;
 }
-
-ul.ourHolder li.item p {
-	padding: 0;
-	margin: 0;
-}
-
-/*ul.ourHolder li.item .current {
-	font-weight: bold;
-}*/
-
-ul.ourHolder li.item .closed .hours {
+.pool__hours__current--closed .pool__hours__current__hours {
 	text-decoration: line-through;
 	color: #CC0000;
 }
 
-h2 span.days {
-	font-weight: normal;
-
-/*	font-size: 16px;*/
+.pool__hours__all {
+	padding: 0;
+	margin: 0;
 }
 
-
-/*ul.ourHolder li.item h3 { margin-top: 10px; font-size: 16px; line-height: 20px; }*/
+.pool__hours__current__days {
+	font-weight: normal;
+}

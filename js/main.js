@@ -25,12 +25,13 @@ $(document).ready(function()
 			$data = json;
 
 			var orderedByOpen = orderByIfItsOpen(json);
-		
+
 			displayData(orderedByOpen);
 	});
 
-	$('#navigation a').click(function(e)
+	$('.sort-by-location').click(function(event)
 	{
+    event.preventDefault();
 		if (navigator.geolocation)
     	{
     		navigator.geolocation.getCurrentPosition(geoLocation);
@@ -40,20 +41,20 @@ $(document).ready(function()
 
   // get the action filter option item on page load
 	  var $filterType = $('#filterOptions li.active a').attr('class');
-	
+
 	  // get and assign the ourHolder element to the
 	// $holder varible for use later
-	  var $holder = $('ul.ourHolder');
-	
+	  var $holder = $('.pools');
+
 	  // clone all items within the pre-assigned $holder element
 	  // var $data = $holder.clone();
-	
+
 	  // attempt to call Quicksand when a filter option
 	// item is clicked
 	$('#filterOptions li a').click(function(e) {
 		// reset the active class on all the buttons
 		$('#filterOptions li').removeClass('active');
-		
+
 		// assign the class of the clicked filter option
 		// element to our $filterType variable
 		var $filterType = $(this).attr('class');
@@ -64,17 +65,17 @@ $(document).ready(function()
 			// assign all li items to the $filteredData var when
 			// the 'All' filter option is clicked
 			var $filteredData = $data.find('li')
-			
+
 			console.log("lol all");
-		} 
+		}
 		else {
 			// find all li elements that have our required $filterType
 			// values for the data-type element
 			var $filteredData = $data.find('li[data-type=' + $filterType + ']');
-			
+
 			console.log("lol else");
 		}
-		
+
 		// call quicksand and assign transition parameters
 		$holder.quicksand($filteredData, {
 			duration: 800,
@@ -108,16 +109,16 @@ function distanceBetweenLocations(location1, location2)
 {
 
 	var R = 6371; // km
-	
+
 	var dLat = (location2.latitude-location1.latitude).toRad();
 	var dLon = (location2.longitude-location1.longitude).toRad();
-	
+
 	var lat1 = location1.latitude.toRad();
 	var lat2 = location2.latitude.toRad();
 
 	var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-	        Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
-	
+	        Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2);
+
 	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 
 	return R * c;
@@ -151,7 +152,7 @@ function isOpenWithHours(hours)
 
 	var currentMinuteTime = currentdate.getHours()*60+currentdate.getMinutes();
 
-	return (minuteTimeFromString(hours.opens) < currentMinuteTime && 
+	return (minuteTimeFromString(hours.opens) < currentMinuteTime &&
 		minuteTimeFromString(hours.closes) > currentMinuteTime);
 }
 
@@ -161,7 +162,7 @@ function orderByIfItsOpen(data)
 
 	openPools = new Array();
 	closedPools = new Array();
-	
+
 	for (var s = 0; s < data.length; s++)
 	{
 		if(isOpen(data[s]))
@@ -175,11 +176,6 @@ function orderByIfItsOpen(data)
 	}
 
 	return openPools.concat(closedPools);
-}
-
-function isOdd(num)
-{ 
-	return num % 2;
 }
 
 function minuteTimeFromString(timeString)
@@ -213,7 +209,7 @@ function reorderTimeInfo(info)
 
 		for (var d = 0; d < daysWithSameOpeningTime.length; d++)
 		{
-			if(daysWithSameOpeningTime[d].hours.opens == dayHours.opens && 
+			if(daysWithSameOpeningTime[d].hours.opens == dayHours.opens &&
 				daysWithSameOpeningTime[d].hours.closes == dayHours.closes)
 			{
 				daysWithSameOpeningTime[d].days.push(dayTag);
@@ -224,7 +220,7 @@ function reorderTimeInfo(info)
 			}
 		}
 
-		if (foundOtherDayWithSameOpeningTime == false) 
+		if (foundOtherDayWithSameOpeningTime == false)
 		{
 			var daysObject = { "hours": dayHours, "days": [dayTag] };
 
@@ -292,14 +288,17 @@ function makeTimeHtml(info)
 
 		if (daysWithSameOpeningTime[d].days.contains(getDayTag()))
 		{
-			timeClass += "current";
+			timeClass += "pool__hours__current";
 
 			if (!isOpenWithHours(daysWithSameOpeningTime[d].hours))
 			{
-				timeClass += " closed";
+				timeClass += " pool__hours__current--closed";
 			}
 
-			currentDayText = '<h2 class="'+timeClass+'"><span class="days">'+dayName+':</span> <span class="hours">'+openTime+'</span></h2>';
+			currentDayText =  '<h2 class="' + timeClass +'">' ;
+      currentDayText +=   '<span class="pool__hours__current__days">' + dayName + ':</span> ';
+      currentDayText +=   '<span class="pool__hours__current__hours">' + openTime + '</span>';
+      currentDayText += '</h2>';
 		}
 		else
 		{
@@ -315,16 +314,15 @@ function makeTimeHtml(info)
 	return currentDayText+"<p>"+otherDaysText+"</p>";
 }
 
-function makePoolHtml(info, isOdd, dayTag)
+function makePoolHtml(info, dayTag)
 {
-	var classes = isOdd ? "item": "item background";
 
 	// var hourClass = (isOpen(info)) ? "" : "closeing";
 
-	var poolHtml = '<li class="'+classes+'" data-id="id-'+info.id+'" data-type="league2">'
-	poolHtml += '<div class="info"><h2>'+info.name+'</h2></div>'
+	var poolHtml = '<li class="pool" data-id="id-'+info.id+'" data-type="league2">'
+	poolHtml += '<h2 class="pool__name">'+info.name+'</h2>'
 
-	poolHtml += '<div class="timeinfo">';
+	poolHtml += '<div class="pool__hours">';
 
 	poolHtml += makeTimeHtml(info);
 
@@ -334,23 +332,23 @@ function makePoolHtml(info, isOdd, dayTag)
 }
 
 function displayData(data)
-{	
+{
 	dataHtml = "<ul>";
 
 	var dayTag = getDayTag();
 
 	for (var s = 0; s < data.length; s++)
 	{
-		dataHtml += makePoolHtml(data[s], isOdd(s), dayTag);
+		dataHtml += makePoolHtml(data[s], dayTag);
 
 		// break;
 	}
-	
+
 	dataHtml += "</ul>";
-	
-	$('ul.ourHolder').quicksand($(dataHtml).find('li'), {
+
+	$('.pools').quicksand($(dataHtml).find('li'), {
 		duration: 500,
 		easing: 'easeOutQuad'
 	});
-	
+
 }
