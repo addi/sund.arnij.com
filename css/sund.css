@@ -1,78 +1,108 @@
-.container {
-	font: 12px/18px 'Avenir Next', 'Avenir', Helvetica, Arial, sans-serif;
-	background: #fff;
-	/*color: #3788DB;*/
+
+body {
+	margin: 0;
+	text-rendering: optimizeLegibility;
+	-webkit-font-kerning: normal;
+	-moz-font-kerning: normal;
+	font-kerning: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font: 14px/1.2 'Avenir Next', 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 ol, ul { list-style: none; }
 
+*, *::before, *::after { box-sizing: border-box; }
+
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .container {
-	width: 800px;
+	position: relative;
 	margin: 0 auto;
+	background: #fff;
+	/*color: #3788DB;*/
 }
 
 .header {
+	padding-left: 10px;
 	color: #6DBCDB;
-	float: left;
+	font-size: 1.5em;
 }
 
 .sort-by-location {
-	padding-top: 20px;
-
-	/*border: 1px solid red;*/
 	float: right;
-}
+	margin-top: 0.25em;
+	padding-right: 10px;
 
-#container #navigation a, a:visited
-{
-	color: black;
+	color: #000;
+	font-weight: 500;
 }
 
 .pools {
+	width: 100%;
 	margin: 0;
 	padding: 0;
-	width: 800px;
 	overflow: hidden;
-
-	border-top: 1px solid #6DBCDB;
 }
 
 .pool {
-	width: 800px;
-	height: 65px;
-/*	float: left;*/
-	overflow: hidden;
+	width: 100%;
+	padding: 5px 10px;
 }
-
 .pool:nth-child(odd) {
-	background: #6DBCDB;
+	background: #97CEE4;
 }
 
 .pool__name {
-	float: left;
-	padding-left: 5px;
+	font-weight: 600;
+	font-size: 1.5em;
+	margin: 0.3em 0;
 }
 
 .pool__hours {
-	float: right;
-	padding-right: 5px;
-
-	text-align: right;
+	margin: 0.2em 0;
+	font-size: 0.8em;
+}
+.pool__hours--current {
+	font-size: 1em;
+	font-weight: 500;
 }
 
-.pool__hours__current {
-	margin-bottom: 0;
+.pool__hours__time {
+	font-weight: 600;
 }
-.pool__hours__current--closed .pool__hours__current__hours {
+.pool__hours__time--closed {
 	text-decoration: line-through;
 	color: #CC0000;
 }
 
-.pool__hours__all {
-	padding: 0;
-	margin: 0;
-}
-
 .pool__hours__current__days {
 	font-weight: normal;
+}
+
+@media screen and (min-width: 600px) {
+	.pool__name {
+		float: left;
+	}
+
+	.pool__hours {
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.container {
+		font-size: 16px;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.pool {
+		padding: 10px 14px;
+		border-radius: 3px;
+	}
 }

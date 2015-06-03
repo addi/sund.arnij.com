@@ -282,23 +282,21 @@ function makeTimeHtml(info)
 
 		daysWithSameOpeningTime[d].days.contains(getDayTag());
 
-		var timeClass = "";
-
 		var dayName = (daysCount == 1) ? firstDayName : firstDayName+' -  '+lastDayName;
 
 		if (daysWithSameOpeningTime[d].days.contains(getDayTag()))
 		{
-			timeClass += "pool__hours__current";
+			var hourClass = "pool__hours__time";
 
 			if (!isOpenWithHours(daysWithSameOpeningTime[d].hours))
 			{
-				timeClass += " pool__hours__current--closed";
+        hourClass += " pool__hours__time--closed";
 			}
 
-			currentDayText =  '<h2 class="' + timeClass +'">' ;
-      currentDayText +=   '<span class="pool__hours__current__days">' + dayName + ':</span> ';
-      currentDayText +=   '<span class="pool__hours__current__hours">' + openTime + '</span>';
-      currentDayText += '</h2>';
+			currentDayText =  '<p class="pool__hours pool__hours--current">' ;
+      currentDayText +=   '<span class="pool__hours__days">' + dayName + ':</span> ';
+      currentDayText +=   '<span class="' + hourClass + '">' + openTime + '</span>';
+      currentDayText += '</p>';
 		}
 		else
 		{
@@ -307,11 +305,11 @@ function makeTimeHtml(info)
 				otherDaysText += ", ";
 			}
 
-			otherDaysText += dayName+": "+openTime;
+			otherDaysText += dayName + ': ' + openTime;
 		}
 	}
 
-	return currentDayText+"<p>"+otherDaysText+"</p>";
+	return currentDayText + '<p class="pool__hours">' + otherDaysText + '</p>';
 }
 
 function makePoolHtml(info, dayTag)
@@ -319,14 +317,10 @@ function makePoolHtml(info, dayTag)
 
 	// var hourClass = (isOpen(info)) ? "" : "closeing";
 
-	var poolHtml = '<li class="pool" data-id="id-'+info.id+'" data-type="league2">'
+	var poolHtml = '<li class="pool group" data-id="id-'+info.id+'" data-type="league2">'
 	poolHtml += '<h2 class="pool__name">'+info.name+'</h2>'
 
-	poolHtml += '<div class="pool__hours">';
-
 	poolHtml += makeTimeHtml(info);
-
-	poolHtml += '</div>';
 
 	return poolHtml;
 }
